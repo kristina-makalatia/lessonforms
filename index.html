@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lesson 10</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+      <header class="header-bg">
+            <nav class="navigation">
+                <ul class="nav-ul">
+                    <li>
+                        <a class="nav-a" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-a" href="#">About</a>
+                    </li>
+                    <li>
+                        <a class="nav-a" href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+      </header>
+
+      <section class="section-bg">
+
+      </section>
+
+      <section>
+          <form class="form" action="" method="POST">
+              <div class="flex-form">
+                <label for="fname">First Name</label>
+                <input class="input-wraper" type="text" id="fname" name="frstname" placeholder="Enter Your Name" required>
+              </div>
+             
+              <div class="flex-form">
+                <label for="passw">Password</label>
+                <input class="input-wraper" type="password" id="passw" name="password" placeholder="Enter Your Password" required>
+              </div>
+
+              <div class="flex-form">
+                <label for="message">Your Message</label>
+                <textarea class="textarea-wraper" name="review" id="message" placeholder="Enter Your Message"></textarea>
+              </div>
+
+              <div>
+                  <div>
+                    <input type="radio" id="gender1" name="gender">
+                    <label for="gender1"> 25 - 40 </label>
+                  </div>
+                  <div>
+                    <input type="radio" id="gender2" name="gender">
+                    <label for="gender2"> 40 - 60 </label>
+                  </div>               
+              </div>
+
+              <div>
+                  <input type="checkbox" id="music" name="music-hobby">
+                  <label for="music">Music</label>
+                  <input type="checkbox" id="dance" name="dance-hobby">
+                  <label for="dance">Dance</label>
+              </div>
+
+              <button class="btn-send" type="submit">Send</button>
+          </form>
+
+          <div class="youtube-wraper">
+            <iframe class="youtube-video" src="https://www.youtube.com/embed/QVFoI9HNJ34" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+      </section>
+      
+  </body>
+</html>

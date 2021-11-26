@@ -1,0 +1,114 @@
+/* ცვლადები */
+:root {
+    --redColor: red;
+    --size01: 50px;
+}
+
+/* header styles */
+.nav-ul {
+    display: flex;
+}
+.nav-ul li{
+    margin-right: 30px;
+}
+.header-bg {
+    background-color: lightblue;
+    padding: 30px;
+}
+.nav-a {
+    position: relative;
+    color: blue;
+    transition: all .5s linear;
+}
+.nav-a:after {
+    content: ' ';
+    height: 1px;
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--redColor);
+    transition: all .5s linear;
+}
+.nav-a:hover:after {
+    width: 100%;
+}
+
+/* section bg styles */
+.section-bg {
+    background-image: url('https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg');
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.section-bg:before {
+    content: ' ';
+    background-color: black;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    opacity: 50%;
+}
+
+/* form styles */
+.flex-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.input-wraper {
+    max-width:700px;
+    width: 100%;
+    height: 60px;
+    color: red;
+    font-size: 18px;
+    padding-left: 10px;
+    /* border: none; */
+    /* border-bottom: 2px solid green; */
+    margin-top: 15px;
+    border-radius: 30px;
+}
+.textarea-wraper {
+    max-width: 700px;
+    width: 100%;
+    height: 200px;
+    resize: none;
+}
+/* .input-wraper[type=password] {
+    background: lightsteelblue;
+} */
+.input-wraper::placeholder,
+.textarea-wraper::placeholder{
+    color: blue;
+    font-size: 16px;
+}
+.input-wraper:focus,
+.textarea-wraper:focus {
+    outline: none;
+}
+.btn-send {
+    width: 200px;
+    height: 30px;
+    background-color: magenta;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+}
+.form {
+    margin-left: var(--size01);
+    padding-bottom: var(--size01);
+}
+
+.youtube-wraper {
+    max-width: 700px;
+    width: 100%;
+    height: 400px;
+}
+.youtube-wraper iframe {
+    width: 100%;
+    height: 100%;
+}
